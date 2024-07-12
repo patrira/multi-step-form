@@ -1,0 +1,76 @@
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  article {
+    padding: 20px;
+    border: 1.5px solid var(--light-gray);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: border-color .2s;
+  }
+  
+  article:hover {
+    border-color: var(--purplish-blue);
+  }
+  
+  article.addon-selected {
+    background-color: var(--alabaster);
+    border-color: var(--purplish-blue);
+  }
+  
+  .input-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .addon-information {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  h3 {
+    color: var(--marine-blue);
+    font-size: 16px;
+  }
+  
+  p {
+    color: var(--cool-gray);
+    font-size: 13px;
+  }
+  
+  small {
+    color: var(--purplish-blue);
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  svg {
+    border: 1.5px solid var(--light-gray);
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    border-radius: 5px;
+  }
+  
+  article.addon-selected svg {
+    background-color: var(--purplish-blue);
+  }
+  
+  @media screen and (min-width: 700px) {
+    h3 {
+      font-size: initial;
+    }
+  
+    p {
+      font-size: 15px;
+    }
+  }

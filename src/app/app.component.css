@@ -1,0 +1,16 @@
+.main {
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 700px) {
+    .main {
+      background-color: white;
+      padding: 1rem;
+      margin: auto;
+      display: flex;
+      gap: 3rem;
+      border-radius: 10px;
+      min-height: 600px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  }

@@ -1,0 +1,11 @@
+<fieldset>
+    <article *ngFor='let subscription of subscriptions' class='subscription-container' [class.selected-subscription]='selectedSubscription === subscription.id' (click)='handleSelectedSubscription(subscription.id)'>
+      <img [src]='subscription.image' [alt]="subscription.name + 'icon'" />
+      <div class='subscription-information'>
+        <h3>{{subscription.name}}</h3>
+        <p>{{dateType === 'monthly' ? subscription.monthlyPrice : subscription.yearlyPrice}}</p>
+        <small *ngIf="dateType === 'yearly'">{{subscription.yearlyExtra}}</small>
+      </div>
+    </article>
+  </fieldset>
+  

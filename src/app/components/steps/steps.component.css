@@ -1,0 +1,33 @@
+.steps-section {
+    background: url('/assets/images/bg-sidebar-mobile.svg');
+    background-position: center;
+    background-size: cover;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  
+  .steps-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  @media screen and (min-width: 700px) {
+    .steps-section {
+      background: url('/assets/images/bg-sidebar-desktop.svg');
+      min-width: 275px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      padding: 40px;
+      justify-content: start;
+      height: 100%;
+    }
+  
+    .steps-list {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }

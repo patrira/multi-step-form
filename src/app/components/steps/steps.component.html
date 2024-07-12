@@ -1,0 +1,6 @@
+<section class='steps-section'>
+    <ul class='steps-list'>
+      <app-step-handler *ngFor='let step of steps' [stepNumber]='step.stepNumber' [stepDesc]='step.stepDesc' [currentStep]='currentStep'></app-step-handler>
+    </ul>
+  </section>
+  

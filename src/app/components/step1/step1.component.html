@@ -1,0 +1,18 @@
+<fieldset>
+    <div class='input-container'>
+      <label for='name'>Name</label>
+      <input   name='name' (input)='handleInput($event)' id='name' placeholder='e.g. Stephen King' [(ngModel)]='personalInfo.name' />
+      <p class='input-error' *ngIf='inputErrors.name'>{{inputErrors.name}}</p>
+    </div>
+    <div class='input-container'>
+      <label for='email'>Email Address</label>
+      <input  name='email' (input)='handleInput($event)' id='email' placeholder='e.g.stephenking@lorem.com' type='email' [(ngModel)]='personalInfo.email' />
+      <p class='input-error' *ngIf='inputErrors.email'>{{inputErrors.email}}</p>
+    </div>
+    <div class='input-container'>
+      <label for='number'>Phone Number</label>
+      <input  name='phoneNumber' (input)='handleInput($event)' id='number' placeholder='e.g.+1 234 567 890' [(ngModel)]='personalInfo.phoneNumber' />
+      <p class='input-error' *ngIf='inputErrors.phoneNumber'>{{inputErrors.phoneNumber}}</p>
+    </div>
+  </fieldset>
+  

@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  h2 {
+    color: var(--marine-blue);
+    font-size: 2rem;
+  }
+  
+  p {
+    margin-top: -10px;
+    font-size: 18px;
+    color: var(--cool-gray);
+    line-height: 25px;
+  }

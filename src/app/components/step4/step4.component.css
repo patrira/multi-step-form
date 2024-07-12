@@ -1,0 +1,96 @@
+.summary-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .summary-information {
+    background-color: var(--magnolia);
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
+  .selected-subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid var(--light-gray);
+    padding-bottom: 15px;
+  }
+  
+  .subscription-information {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .subscription-information h3 {
+    color: var(--marine-blue);
+    font-size: 17px;
+  }
+  
+  .subscription-information p {
+    color: var(--cool-gray);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+  }
+  
+  .subscription-price {
+    color: var(--marine-blue);
+    font-weight: bold;
+  }
+  
+  .selected-addons {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .addon {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .addon p {
+    color: var(--cool-gray);
+    font-weight: 400;
+  }
+  
+  .addon h4 {
+    color: var(--marine-blue);
+    font-weight: 500;
+  }
+  
+  .addon-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .addon-right svg {
+    margin-top: 1px;
+    cursor: pointer;
+    fill: var(--marine-blue);
+    transition: fill .2s;
+  }
+  
+  .addon-right svg:hover {
+    fill: var(--strawberry-red);
+  }
+  
+  .summary-total {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .summary-total p {
+    color: var(--cool-gray);
+  }
+  
+  .summary-total h4 {
+    color: var(--purplish-blue);
+    font-weight: 900;
+  }

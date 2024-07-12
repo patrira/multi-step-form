@@ -1,0 +1,14 @@
+
+<fieldset>
+    <article *ngFor='let addon of addons' (click)='handleAddonUpdate(addon.id)' [class.addon-selected]='addon.selected'>
+      <div class='input-section'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9"><path fill="none" stroke="#FFF" stroke-width="1.5" d="m1 4 3.433 3.433L10.866 1" /></svg>
+        <div class='addon-information'>
+          <h3>{{addon.name}}</h3>
+          <p>{{addon.description}}</p>
+        </div>
+      </div>
+      <small>{{dateType === 'monthly' ? addon.monthlyAdditionalPrice : addon.yearlyAdditionalPrice}}</small>
+    </article>
+  </fieldset>
+  

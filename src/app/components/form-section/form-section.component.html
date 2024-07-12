@@ -1,0 +1,19 @@
+<section class='form-section'>
+    <div class='form-section-container'>
+      <app-form-steps [formStepInformation]='formStepsInformation[currentStep]' ></app-form-steps>
+      <form (submit)='handleSubmit($event)'>
+        <app-step1 *ngIf='currentStep === 0' [formData]='formData' [updateFormData]='updateFormData' [resetInputErrors]='resetInputErrors' [inputErrors]='inputErrors' ></app-step1>
+        <app-step2 [dateType]='dateType' [formData]='formData' [updateFormData]='updateFormData' *ngIf='currentStep === 1' ></app-step2>
+        <app-step3 [dateType]='dateType' [formData]='formData' [updateFormData]='updateFormData' *ngIf='currentStep === 2' ></app-step3>
+        <app-step4 [dateType]='dateType' [formData]='formData' [updateFormData]='updateFormData' [backToSubscriptionStep]='backToSubscriptionStep' *ngIf='currentStep === 3' ></app-step4>
+        <app-date-handler [handleDateTypeChange]='handleDateTypeChange' [dateType]='dateType' *ngIf='currentStep > 0'></app-date-handler>
+        <div class='btns-container'>
+          <button type='button' class='back-btn' *ngIf='currentStep > 0' (click)='handlePreviousStep()'>Go back</button>
+          <button type='button' class='next-btn' *ngIf='currentStep < 3' (click)='currentStep === 0 ? checkInputs() : handleNextStep()'>Next Step</button>
+          <button type='submit' class='confirm-btn' *ngIf='currentStep === 3'>Confirm</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+

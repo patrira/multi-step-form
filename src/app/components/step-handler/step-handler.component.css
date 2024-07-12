@@ -1,0 +1,52 @@
+.step-information {
+    display: none;
+  }
+  
+  .step-number {
+    border: 1.5px solid var(--white);
+    border-radius: 50%;
+    font-weight: 600;
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .step-number.current {
+    background-color: var(--light-blue);
+    border: none;
+    color: var(--marine-blue);
+  }
+  
+  @media screen and (min-width: 700px) {
+  
+    .step-container {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      text-transform: uppercase;
+    }
+    
+    .step-number {
+      width: 35px;
+      height: 35px;
+    }
+    
+    .step-container h3 {
+      font-size: 15px;
+      font-weight: normal;
+      color: var(--pastel-blue);
+    }
+    
+    .step-information {
+      display: flex;
+      flex-direction: column;
+      color: var(--white);
+      font-weight: bold;
+      letter-spacing: 1.2px;
+      font-size: 15px;
+    }
+  
+  }

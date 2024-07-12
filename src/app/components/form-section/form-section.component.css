@@ -1,0 +1,107 @@
+.form-section {
+    margin-top: -5rem;
+    padding: 1rem;
+  }
+  
+  .form-section-container {
+    position: relative;
+    height: 100%;
+    margin: auto;
+    max-width: 500px;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 1px 20px 1px rgba(59, 88, 231, 0.206);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+  }
+  
+  .btns-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btns-container .next-btn:only-child {
+    margin-left: auto;
+  }
+  
+  .back-btn {
+    font-weight: 500;
+    border: none;
+    background: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: var(--cool-gray);
+    cursor: pointer;
+  }
+  
+  .next-btn {
+    font-weight: 500;
+    border: none;
+    background: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 12px;
+    background: var(--marine-blue);
+    border-radius: 10px;
+    color: var(--white);
+    cursor: pointer;
+  }
+  
+  .confirm-btn {
+    font-weight: 500;
+    border: none;
+    background: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 12px;
+    background: var(--purplish-blue);
+    border-radius: 10px;
+    color: var(--white);
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 700px) {
+    .form-section {
+      margin-top: 0;
+      padding: 0;
+      height: 100%;
+      min-width: 500px;
+    }
+  
+    .form-section-container {
+      box-shadow: none;
+    }
+  
+    .btns-container {
+      margin-top: auto;
+    }
+  
+    .back-btn:hover {
+      color: var(--marine-blue);
+    }
+  
+    .next-btn, .confirm-btn {
+      width: 120px;
+      padding: 15px;
+      transition: background-color .2s;
+    }
+  
+    .next-btn:hover {
+      background-color: var(--purplish-blue);
+    }
+  
+    .confirm-btn:hover {
+      background-color: var(--pastel-blue);
+    }
+  
+  }

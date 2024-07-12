@@ -1,0 +1,45 @@
+.date-changer-container {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--magnolia);
+  }
+  
+  .date-changer-btn {
+    cursor: pointer;
+    width: 40px;
+    background-color: var(--marine-blue);
+    border-radius: 25px;
+    padding: 3px 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-changer-container p {
+    color: var(--cool-gray);
+    font-weight: 800;
+    transition: color .2s;
+  }
+  
+  .date-changer-container .date-type-selected {
+    color: var(--marine-blue);
+  }
+  
+  .date-changer-btn span {
+    transition: transform .2s;
+  }
+  
+  .date-changer-btn.yearly span {
+    transform: translateX(115%);
+  }
+  
+  .date-changer-btn span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: var(--white);
+    border-radius: 50%;
+  }

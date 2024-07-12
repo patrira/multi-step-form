@@ -1,0 +1,8 @@
+<div class='date-changer-container'>
+    <p [class.date-type-selected]="dateType !== 'yearly'">Monthly</p>
+    <div class='date-changer-btn' (click)='handleDateTypeChange()' [class.yearly]="dateType === 'yearly'">
+      <span></span>
+    </div>
+    <p [class.date-type-selected]="dateType === 'yearly'">Yearly</p>
+  </div>
+  
