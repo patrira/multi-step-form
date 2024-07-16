@@ -20,7 +20,7 @@
     color: var(--marine-blue);
   }
   
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 700px) {
   
     .step-container {
       display: flex;
