@@ -65,7 +65,7 @@ fieldset {
     background-color: var(--purplish-blue);
   }
   
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 735px) {
     h3 {
       font-size: initial;
     }

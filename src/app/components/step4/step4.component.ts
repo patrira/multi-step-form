@@ -29,9 +29,6 @@ export class Step4Component {
       return subscriptionPrice! + addonsPrice;
   }
   
-  removeAddon = (id: number) => {
-    const updatedAddons = this.formData.addons!.filter(addon => addon.id !== id);
-    this.updateFormData('addons', updatedAddons);
-  }
+  
 
 }

@@ -70,7 +70,7 @@
     cursor: pointer;
   }
   
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 735px) {
     .form-section {
       margin-top: 0;
       padding: 0;
